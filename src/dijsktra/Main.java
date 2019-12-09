@@ -1,4 +1,4 @@
-package ciao;
+package dijsktra;
 
 import java.util.Scanner;
 
@@ -59,7 +59,6 @@ public class Main {
 		//applicazione del algoritmo
 		Algoritmo arg=new Algoritmo(g,iniziale);
 		arg.algoritmo();
-		arg.aggPercorso();
 
 		for (int i = 0; i < g.getNodi().size(); i++) {
 			System.out.print(g.getNodi().get(i).getNome() + " ");

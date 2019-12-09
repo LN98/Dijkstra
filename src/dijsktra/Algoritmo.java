@@ -1,4 +1,4 @@
-package ciao;
+package dijsktra;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ public class Algoritmo {
 
 	}
 	
-	public void aggPercorso() {
+	private void aggPercorso() {
 		Nodo p;
 		for(int i=1;i<g.getNodi().size();i++) {
 			p=g.getNodi().get(i);
@@ -82,6 +82,7 @@ public class Algoritmo {
 			
 			}
 		}
+		aggPercorso();
 	}
 
 }
